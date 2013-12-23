@@ -1,0 +1,21 @@
+{
+  "run_list": [ "recipe[postgresql::client]","recipe[postgresql::server]","recipe[postgresql::config_initdb]","recipe[jira::psql-create]" ],
+  "postgresql": {
+    "config": {
+      "listen_addresses": "127.0.0.1",
+      
+      "ssl": false
+    },
+    "config_pgtune": {
+      "db_type": "web"
+    },
+    "pg_hba": [
+      {
+	"type": "local", "db": "all", "user": "all", "addr": "", "method": "trust",
+	"type": "host", "db": "all", "user": "all", "addr": "127.0.0.0/8", "method": "trust"
+      }
+    ],
+    "password": {
+      "postgres": "md5sumhash"
+    }
+}

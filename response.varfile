@@ -1,0 +1,12 @@
+#install4j response file for JIRA 6.1.2
+#Thu Oct 31 15:20:21 UTC 2013
+rmiPort$Long=8005
+app.jiraHome=/opt/atlassian/jira-home
+app.install.service$Boolean=true
+existingInstallationDir=/opt/JIRA
+sys.confirmedUpdateInstallationString=false
+sys.languageId=en
+sys.installationDir=/opt/atlassian/jira
+executeLauncherAction$Boolean=true
+httpPort$Long=8080
+portChoice=default
