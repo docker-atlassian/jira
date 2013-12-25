@@ -34,6 +34,7 @@ RUN sh /opt/atlassian-jira-6.1.5-x64.bin -q -varfile /opt/response.varfile
 RUN rm -f /opt/atlassian-jira-6.1.5-x64.bin
 
 # Start the service
+ADD ./postgres.sh /postgres.sh
 ADD ./init.sh /init.sh
 CMD ["sh", "/init.sh"]
 EXPOSE 8080
