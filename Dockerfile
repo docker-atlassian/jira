@@ -11,6 +11,7 @@ ADD ./node.json /etc/chef/node.json
 ADD ./response.varfile /opt/response.varfile
 ADD ./postgres.sh /postgres.sh
 ADD ./init.sh /init.sh
+ADD ./install_cmds.sh /install_cmds.sh
 
 ## Now Install Atlassian Jira
 RUN /install_cmds.sh
