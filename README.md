@@ -6,12 +6,12 @@ Jira image with Postgresql.
 Requirements
 ------------
 
-Usage
------
-Database Type: PostgreSQL
-Hostname: localhost
-Database: jiradb
-DBuser: postgres
+Configuration
+-------------
+    Database Type: PostgreSQL
+    Hostname: localhost
+    Database: jiradb
+    DBuser: postgres
 
 
 Contributing
