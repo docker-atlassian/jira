@@ -1,3 +1,4 @@
+# test
 # Install Atlassian Jira
 # This is a trusted build based on the "base" image, but we also need postgresql
 FROM linux/postgres
