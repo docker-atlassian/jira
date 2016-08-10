@@ -1,15 +1,15 @@
 # Install Atlassian Jira
 # This is a trusted build based on the "base" image, but we also need postgresql
-FROM linux/postgres
+FROM linuxkonsult/postgres
 
 MAINTAINER Tom Eklöf tom@linux-konsult.com
 
-ENV AppName jira
-ENV AppVer 6.2
+ENV AppName jira-software
+ENV AppVer 7.1.9
 ENV Arch x64
 
 # Fetch the files
-ADD http://www.atlassian.com/software/jira/downloads/binary/atlassian-jira-6.2-x64.bin /opt/
+ADD http://www.atlassian.com/software/jira/downloads/binary/atlassian-$AppName-$AppVer-$Arch.bin /opt/
 ADD ./install_cmds.sh /install_cmds.sh
 ADD ./node.json /etc/chef/node.json
 ADD ./response.varfile /opt/response.varfile
