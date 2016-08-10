@@ -18,4 +18,5 @@
     "password": {
       "postgres": "md5sumhash"
     }
+  }
 }
