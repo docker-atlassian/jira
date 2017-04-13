@@ -17,7 +17,7 @@ ADD ./init.sh /init.sh
 ADD ./install_cmds.sh /install_cmds.sh
 
 ## Now Install Atlassian Jira
-RUN /install_cmds.sh
+RUN chmod +x /install_cmds.sh
 
 # Start the service
 CMD ["sh", "/init.sh"]
